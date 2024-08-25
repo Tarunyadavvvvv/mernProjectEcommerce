@@ -1,21 +1,78 @@
 MERN Ecommerce Website
-This application consists almost all the features present in the real ecommerce application some of them are
-Register, Login and logout
-For user and admin- Reset password and profile
-For Admin options like- CRUD operations for product,user,order,review
+This is a full-featured ecommerce application built with the MERN stack. The application includes almost all the functionalities you would expect in a real-world ecommerce application.
 
-Install dependecies:
-For backend - npm install 
-For frontend - cd frontend npm install --legacy-peer-deeps(as some dependcies are deprycted)
+Features
+User Features:
+Register, Login, and Logout
+Reset Password
+Update Profile
+Admin Features:
+Manage Products: CRUD operations (Create, Read, Update, Delete)
+Manage Users: Delete User
+Manage Orders: Update Order Status
+Manage Reviews: View and Delete Reviews
 
-Env variables
-Make Sure to Create a config.env file in backend/config directory and add appropriate variables in order to use the app.
+Installation
+1. Install Dependencies:
+For Backend:
+npm install
+For Frontend:
+cd frontend
+npm install --legacy-peer-deps
+Note: The --legacy-peer-deps flag is used because some dependencies may be deprecated.
 
-Essential Variables 
-PORT= DB_URI = STRIPE_API_KEY= STRIPE_SECRET_KEY= JWT_SECRET= JWT_EXPIRE= COOKIE_EXPIRE= SMPT_SERVICE = SMPT_MAIL= SMPT_PASSWORD= SMPT_HOST= SMPT_PORT= CLOUDINARY_NAME= CLOUDINARY_API_KEY= CLOUDINARY_API_SECRET= fill each field with your info respectively
+2. Environment Variables:
+Make sure to create a config.env file in the backend/config directory and add the following variables:
 
-Then just run both frontend and backend:
-For backend- npm run dev
-For frontend- npm start
+PORT=
+DB_URI=
+STRIPE_API_KEY=
+STRIPE_SECRET_KEY=
+JWT_SECRET=
+JWT_EXPIRE=
+COOKIE_EXPIRE=
+SMPT_SERVICE=
+SMPT_MAIL=
+SMPT_PASSWORD=
+SMPT_HOST=
+SMPT_PORT=
+CLOUDINARY_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+Fill each field with your respective information.
 
-![alt text](<Screenshot (62).png>)
+Running the Application
+For Backend:
+npm run dev
+For Frontend:
+npm start
+
+Screenshots
+Here are some screenshots to give you an overview of the application:
+
+Home page
+![Screenshot1](<Screenshot (62).png>)
+
+Products
+![Screenshot2](<Screenshot (63).png>)
+
+Admin Dashboard
+![Screenshot7](<Screenshot (72).png>)
+
+Create Product
+![Screenshot6](<Screenshot (73).png>) 
+
+Cart
+![Screenshot5](<Screenshot (64).png>)
+
+Shipping
+![Screenshot4](<Screenshot (65).png>) 
+
+Order Summary
+![Screenshot3](<Screenshot (66).png>)
+
+card Info
+![Screenshot10](<Screenshot (67).png>)
+
+Profile page
+![Screenshot8](<Screenshot (71).png>) 
