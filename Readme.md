@@ -17,13 +17,10 @@ This is a full-featured ecommerce application built with the MERN stack. The app
 1. **Install Dependencies:**
 
    **For Backend:**
-npm install
+    npm install
 
-**For Frontend:**
-
-cd frontend 
-
-npm install --legacy-peer-deps
+   **For Frontend:**
+    cd frontend     npm install --legacy-peer-deps
 
 Note: The --legacy-peer-deps flag is used because some dependencies may be deprecated.
 
@@ -47,10 +44,12 @@ CLOUDINARY_API_KEY=
 CLOUDINARY_API_SECRET=
 Fill each field with your respective information.
 
-**Running the Application for backend:**
+**Running the Application** 
+
+**For backend:**
 npm run dev
 
-**For Frontend**:
+**For frontend**:
 npm start
 
 **Screenshots**
