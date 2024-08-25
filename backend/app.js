@@ -19,9 +19,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 // CORS Configuration
 app.use(
   cors({
-    origin: "", // Your frontend URL
-    //origin: "https://mern-project-ecommerce-ochre.vercel.app/", // Your frontend URL
-
+    origin: "http://localhost:3000", // Your frontend URL
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true, // Add this line if your frontend sends cookies
   })

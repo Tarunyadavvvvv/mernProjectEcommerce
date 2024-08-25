@@ -1,17 +1,21 @@
-// password is password for both the mails guddu(user) and ytarun(admin) ones
+MERN Ecommerce Website
+This application consists almost all the features present in the real ecommerce application some of them are
+Register, Login and logout
+For user and admin- Reset password and profile
+For Admin options like- CRUD operations for product,user,order,review
 
-// for both user and admin
+Install dependecies:
+For backend - npm install 
+For frontend - cd frontend npm install --legacy-peer-deeps(as some dependcies are deprycted)
 
-// header not visible after going inside order and profile menu from right sidebar
+Env variables
+Make Sure to Create a config.env file in backend/config directory and add appropriate variables in order to use the app.
 
-// profile not updating of user and admin both(updasting through backend only)
+Essential Variables 
+PORT= DB_URI = STRIPE_API_KEY= STRIPE_SECRET_KEY= JWT_SECRET= JWT_EXPIRE= COOKIE_EXPIRE= SMPT_SERVICE = SMPT_MAIL= SMPT_PASSWORD= SMPT_HOST= SMPT_PORT= CLOUDINARY_NAME= CLOUDINARY_API_KEY= CLOUDINARY_API_SECRET= fill each field with your info respectively
 
-// password is password for both the mails guddu and ytarun ones
+Then just run both frontend and backend:
+For backend- npm run dev
+For frontend- npm start
 
-for run in local without heroku
-
-//DB_URI = “mongodb://127.0.0.1:27017/Ecommerce”
-
-for cloud mongodb
-
-tarunyadav
+![alt text](<Screenshot (62).png>)
