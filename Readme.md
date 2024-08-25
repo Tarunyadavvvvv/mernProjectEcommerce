@@ -50,29 +50,29 @@ npm start
 Screenshots
 Here are some screenshots to give you an overview of the application:
 
-Home page
-![Screenshot1](<Screenshot (62).png>)
+    Home page
+    ![Screenshot1](<Screenshot (62).png>)
 
-Products
-![Screenshot2](<Screenshot (63).png>)
+    Products    
+    ![Screenshot2](screenshots/Screenshot%20(63).png)
 
-Admin Dashboard
-![Screenshot7](<Screenshot (72).png>)
+    Admin Dashboard
+    ![Screenshot7](<Screenshot (72).png>)
 
-Create Product
-![Screenshot6](<Screenshot (73).png>) 
+    Create Product
+    ![Screenshot6](<Screenshot (73).png>) 
 
-Cart
-![Screenshot5](<Screenshot (64).png>)
+    Cart
+    ![Screenshot5](<Screenshot (64).png>)
 
-Shipping
-![Screenshot4](<Screenshot (65).png>) 
+    Shipping
+    ![Screenshot4](<Screenshot (65).png>) 
 
-Order Summary
-![Screenshot3](<Screenshot (66).png>)
+    Order Summary
+    ![Screenshot3](<Screenshot (66).png>)
 
-card Info
-![Screenshot10](<Screenshot (67).png>)
+    card Info
+    ![Screenshot10](<Screenshot (67).png>)
 
-Profile page
-![Screenshot8](<Screenshot (71).png>) 
+    Profile page
+    ![Screenshot8](<Screenshot (71).png>) 
