@@ -1,0 +1,93 @@
+.myOrdersPage {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2vmax;
+  box-sizing: border-box;
+  background-color: #f1f3f4; /* Light background for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh; /* Ensures a minimum height for better appearance */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#myOrdersHeading {
+  text-align: center;
+  font: 500 2vmax "Roboto";
+  color: #202124; /* Google dark gray */
+  background-color: #4285f4; /* Google blue */
+  padding: 1vmax 2vmax;
+  border-radius: 8px;
+  margin-bottom: 2vmax;
+  width: 100%;
+}
+
+.myOrdersTable {
+  background-color: #ffffff; /* White */
+  border-radius: 8px;
+  padding: 1vmax;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.myOrdersTable .MuiDataGrid-root {
+  border: none; /* Remove the default border */
+}
+
+.myOrdersTable .MuiDataGrid-columnHeader {
+  background-color: var(--my-blue);
+  color: white;
+  font: 500 1.2vmax "Roboto";
+  border-radius: 8px 8px 0 0;
+  row-gap: 3px;
+}
+
+.myOrdersTable .MuiDataGrid-cell {
+  color: #202124; /* Google dark gray */
+  font: 400 1.2vmax "Roboto";
+}
+
+.myOrdersTable .MuiDataGrid-row {
+  &:nth-of-type(even) {
+    background-color: #f7f7f7; /* Alternate row color */
+  }
+}
+
+.MuiDataGrid-columnHeader div {
+  font: 500 1.2vmax "Roboto";
+  color: #ffffff; /* White */
+  
+}
+
+.MuiDataGrid-iconSeparator {
+  display: none !important;
+}
+
+.greenColor {
+  color: #34a853 !important; /* Google green */
+}
+
+.redColor {
+  color: #ea4335 !important; /* Google red */
+}
+
+.actionIcon {
+  color: var(--my-blue); /* Change this to the desired color */
+}
+
+@media screen and (max-width: 600px) {
+  .myOrdersPage {
+    padding: 1vmax;
+  }
+
+  #myOrdersHeading {
+    font: 500 3vmax "Roboto";
+    padding: 3vmax;
+  }
+
+  .myOrdersTable .MuiDataGrid-root {
+    font-size: 3vw;
+  }
+}

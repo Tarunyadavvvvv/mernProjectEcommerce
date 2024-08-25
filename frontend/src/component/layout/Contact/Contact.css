@@ -1,0 +1,42 @@
+.contactContainer {
+  height: 80vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex; /* Changed from grid to flex for better centering and responsiveness */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #f0f0f0; /* Added a light gray background for better contrast */
+  padding: 1vmax; /* Added padding for better spacing on smaller screens */
+  box-sizing: border-box; /* Ensure padding is included in the width/height */
+}
+
+.mailBtn {
+  text-decoration: none;
+  transform: translateX(-100vw);
+  animation: mailBtnAnimation 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* Smoother and faster animation with easing */
+}
+
+.mailBtn > button {
+  text-decoration: none;
+  font: 300 2vmax "Roboto"; /* Increased font weight for better readability */
+  cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
+  padding: 1.5vmax 3vmax; /* Adjusted padding for a more balanced look */
+  background-color: #4caf50; /* Added a background color to the button */
+  color: white; /* White text for contrast */
+  border: none; /* Removed default button border */
+  border-radius: 8px; /* Added rounded corners */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Added a subtle shadow for depth */
+  transition: background-color 0.3s, transform 0.3s; /* Added smooth transition effects */
+}
+
+.mailBtn > button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+@keyframes mailBtnAnimation {
+  to {
+    transform: translateX(0);
+  }
+}

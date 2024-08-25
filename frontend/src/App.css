@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  :root {
+    --my-red: #ea4335;
+    --my-red-hover: #d93025;
+    --my-blue: #4285f4;
+    --my-blue-hover: #3367d6;
+    --my-yellow: #fbbc05;
+    --my-yellow-hover: #e37400;
+    --my-green: #34a853;
+    --my-green-hover: #22863a;
+    --my-darkgray: #202124;
+    --my-darkgray-hover: #3c4043;
+  }
+  
+  body {
+    cursor: url("./images/cursor.png"), auto;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .greenColor {
+    color: green !important;
+  }
+  .redColor {
+    color: red !important;
+  }
+  

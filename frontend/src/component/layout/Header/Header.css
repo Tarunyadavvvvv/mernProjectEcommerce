@@ -1,0 +1,58 @@
+/* Header.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+}
+
+.navbar-logo img {
+  width: 10vmax;
+  height: 10vmax;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 6vmax;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: rgba(35, 35, 35, 0.8);
+  font-size: 1.3vmax;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #ff1100;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 1rem;
+  margin-right: 8vmax;
+}
+
+.navbar-icons a {
+  color: rgba(35, 35, 35, 0.8);
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.navbar-icons a:hover {
+  color: #ff1100;
+}
+
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}

@@ -1,0 +1,239 @@
+.LoginSignUpContainer {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(231, 231, 231);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.LoginSignUpBox {
+  background-color: #ffffff;
+  width: 25vw; /* Adjusted width to match .updatePasswordBox */
+  height: 63vh; /* Adjusted height to match .updatePasswordBox */
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.LoginSignUpBox:hover {
+  transform: translateY(-10px);
+}
+
+.login_signUp_toggle {
+  display: flex;
+  height: 3vmax;
+}
+
+.login_signUp_toggle > p {
+  color: var(--my-darkgray); /* Adjusted color to match .updatePasswordHeading */
+  font: 500 1.5vmax "Roboto", sans-serif; /* Adjusted font size to match .updatePasswordHeading */
+  transition: all 0.5s;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.login_signUp_toggle > p:hover {
+  color: var(--my-darkgray-hover);
+}
+
+.LoginSignUpBox > div > button {
+  background-color: var(--my-green);
+  height: 3px;
+  width: 50%;
+  border: none;
+  transition: all 0.5s;
+}
+
+.loginForm,
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax 2vmax;
+  justify-content: space-between;
+  height: 55%; /* Adjusted height to match .updatePasswordForm */
+  transition: all 0.5s;
+}
+
+.signUpForm {
+  transform: translateY(-100%) translateX(-100vmax);
+}
+
+.loginForm > div,
+.signUpForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 1vmax;
+}
+
+.loginForm > div > input,
+.signUpForm > div > input {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Adjusted border color to match .updatePasswordForm input */
+  border-radius: 8px; /* Adjusted border radius to match .updatePasswordForm input */
+  font: 400 1vmax "Roboto", sans-serif; /* Adjusted font size to match .updatePasswordForm input */
+  outline: none;
+  background-color: #f5f5f5; /* Adjusted background color to match .updatePasswordForm input */
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.loginForm > div > input:focus,
+.signUpForm > div > input:focus {
+  border-color: #007bff; /* Adjusted border color on focus */
+  background-color: #ffffff; /* Adjusted background color on focus */
+}
+
+.loginForm > div > svg,
+.signUpForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.5); /* Adjusted color to match .updatePasswordForm svg */
+}
+
+.loginForm > a {
+  color: rgba(0, 0, 0, 0.651);
+  text-decoration: none;
+  align-self: flex-end;
+  transition: all 0.5s;
+  font: 500 0.8vmax "Gill Sans";
+}
+
+.loginForm > a:hover {
+  color: black;
+}
+
+#registerImage > img {
+  width: 3vmax;
+  border-radius: 100%;
+}
+
+#registerImage > input {
+  display: flex;
+  padding: 0%;
+}
+
+#registerImage > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  font: 400 0.8vmax cursive;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.623);
+  background-color: rgb(255, 255, 255);
+}
+
+#registerImage > input::file-selector-button:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.loginBtn,
+.signUpBtn {
+  border: none;
+  background-color: #007bff; /* Adjusted background color to match .updatePasswordBtn */
+  color: white;
+  font: 500 1.2vmax "Roboto", sans-serif; /* Adjusted font size to match .updatePasswordBtn */
+  width: 100%;
+  padding: 1vmax;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  outline: none;
+  border-radius: 8px; /* Adjusted border radius to match .updatePasswordBtn */
+  margin-top: 2vmax;
+}
+
+.loginBtn:hover,
+.signUpBtn:hover {
+  background-color: #0056b3; /* Adjusted hover color to match .updatePasswordBtn hover */
+  transform: translateY(-2px);
+}
+
+.shiftToLeft {
+  transform: translateX(-100%);
+}
+
+.shiftToNeutral {
+  transform: translateX(0%);
+}
+
+.shiftToNeutralForm {
+  transform: translateX(0%) translateY(-100%);
+}
+
+.shiftToRight {
+  transform: translateX(100%);
+}
+
+@media screen and (max-width: 600px) {
+  .LoginSignUpBox {
+    width: 90vw; /* Adjusted width to match .updatePasswordBox */
+    height: auto; /* Adjusted height to match .updatePasswordBox */
+    padding: 5vw;
+  }
+
+  .login_signUp_toggle {
+    height: 5vmax;
+  }
+
+  .login_signUp_toggle > p {
+    font: 500 1.5vmax "Roboto";
+  }
+
+  .loginForm,
+  .signUpForm {
+    padding: 5vw;
+  }
+
+  .loginForm > div > input,
+  .signUpForm > div > input {
+    padding: 4vw 8vw;
+    font: 400 4vw "Roboto", sans-serif; /* Adjusted font size to match .updatePasswordForm input */
+  }
+
+  .loginForm > div > svg,
+  .signUpForm > div > svg {
+    font-size: 5vw; /* Adjusted font size to match .updatePasswordForm svg */
+    transform: translateX(3vw);
+  }
+
+  .loginForm > a {
+    font: 500 1.8vmax "Gill Sans";
+  }
+
+  #registerImage > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  #registerImage > input::file-selector-button {
+    height: 7vh;
+    font: 400 1.8vmax cursive;
+  }
+
+  .loginBtn,
+  .signUpBtn {
+    font: 500 5vw "Roboto", sans-serif; /* Adjusted font size to match .updatePasswordBtn */
+    padding: 4vw;
+    margin-top: 5vw;
+  }
+}
